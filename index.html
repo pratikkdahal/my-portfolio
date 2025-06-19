@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  </head>
+  <body>
+  <nav>
+    <h3>PratikSoar</h3>
+    <ul class="main-nav">
+      <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+      <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-menu">
+      <span class="close-btn" id="close-btn"><i class="fas fa-times"></i></span>
+      <ul>
+        <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <section id="hero">
+      <div class="left">
+        <div class="hero-text">
+          <h2>I'm Pratik Dahal!</h2>
+          <span>Undergrad || Explorer</span>
+          <p class="hero-desc">
+            Computer Engineering student at IOE Purwanchal Campus, Dharan
+          </p>
+          <a href="#" class="btn btn-primary">Download CV</a>
+        </div>
+      </div>
+      <img src="img1.png" alt="Pratik Dahal" class="hero-image" />
+    </section>
+    <section id="projects">
+      <div class="title">
+        <h2>My Projects</h2>
+        <p class="sub-title">
+          Showcasing my development journey through various projects
+        </p>
+      </div>
+      <div class="project-list">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="bank.png" alt="Banking System" width="300" />
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">Banking System</h4>
+            <p class="card-description">
+              A comprehensive banking management system built with all the concepts of "C Programming Language" as a Final Project of 1st Semester.
+            </p>
+            <a href="https://github.com/gtm-safal/Banking_system" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="porto.jpg" alt="" width="300" />
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">Portfolio Website</h4>
+            <p class="card-description">
+                Website built with HTML,CSS and JavaScript, that showcases what skills do Pratik pursue and what are his projects done.
+            </p>
+            <a href="https://github.com/pratikkdahal/portfolio">View Respository</a>
+          </div>
+        </div>
+        <!-- <div class="project-card">
+          <div class="project-image">
+            <img src="jj.jpg" alt="" width="300" />
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">Project Name</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="jj.jpg" alt="" width="300" />
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">Project Name</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="pratik.jpg" alt="" width="300" />
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">Project Name</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="pp.jpg" alt="" width="300" />
+          </div>
+          <div class="card-details">
+            <h4 class="card-title">Project Name</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a href="#">Live Demo</a>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    
+    <section id="skills">
+      <div class="title">
+        <h2>My Skills</h2>
+        <p class="sub-title">
+          Technologies and tools I work with
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+          </div>
+          <h4>HTML5</h4>
+          <p>Markup Language</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+          </div>
+          <h4>CSS3</h4>
+          <p>Styling & Layout</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          </div>
+          <h4>JavaScript</h4>
+          <p>Programming Language</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          </div>
+          <h4>Python</h4>
+          <p>Programming Language</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+          </div>
+          <h4>C</h4>
+          <p>Programming Language</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          </div>
+          <h4>C++</h4>
+          <p>Programming Language</p>
+        </div>
+        <!-- <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          </div>
+          <h4>Git</h4>
+          <p>Version Control</p>
+        </div> -->
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          </div>
+          <h4>GitHub</h4>
+          <p>Code Repository</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="details">
+        <h2>About Myself!</h2>
+        <p>
+          Hi! I'm Pratik Dahal, currently pursuing my Bachelor's in Computer Engineering at IOE Purwanchal Campus, Dharan. I completed my Grade 12 with an excellent GPA of 3.71, which opened doors to this exciting field of technology.
+        </p>
+        <p>
+          I'm well-skilled in HTML, CSS, C, and C++, with a solid foundation in Python and JavaScript that I'm continuously developing. I'm well known about the basics of Git and GitHub for version control and collaboration. My passion lies in front-end development, where I enjoy creating clean, responsive web interfaces that bring ideas to life.
+        </p>
+        <p>
+          This portfolio showcases my journey, projects, and dedication as I am starting to navigate through this exciting world of tech, code and innovation. 
+        </p>
+        <div class="wrapper">
+           <div class="button">
+              <div class="icon">
+                <a href="https://www.facebook.com/prateek.dahal.98" target="blank"> <i class="fab fa-facebook-f"></i></a>
+                
+              </div>
+            </div>
+           <div class="button">
+              <div class="icon"><a href="https://www.instagram.com/pratiikd15/" target="blank"><i class="fab fa-instagram"></i></a>
+                
+              </div>
+            </div>
+           <div class="button">
+              <div class="icon"><a href="https://www.linkedin.com/in/pratik-dahal-71635a334/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+
+           <div class="button">
+              <div class="icon"><a href="https://github.com/pratikkdahal" target="blank"><i class="fab fa-github"></i></a>
+                
+              </div>
+            </div>
+           <div class="button">
+              <div class="icon"><a href="https://discord.com/channels/@me" target="blank"><i class="fab fa-discord"></i></a>
+              
+              </div>
+            </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="title">
+        <h2>Contact Me</h2>
+        <p class="sub-title">
+          Let's make a impact together !
+        </p>
+      </div>
+        <form action="https://formsubmit.co/pratikd354@gmail.com" method="POST">
+        <div class="inputs">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="inputs">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="inputs">
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+       <!-- form fields here -->
+      </form>
+    </section>
+    <section id="footer">© 2025 Pratik Dahal. All rights reserved.</section>
+    <script src="script.js"></script>
+  </body>
+</html>
