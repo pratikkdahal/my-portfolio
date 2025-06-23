@@ -49,7 +49,117 @@ body {
   color: var(--color-white);
   background-color: var(--color-black);
 }
+/* Show hamburger and sidebar on small screens */
+@media (max-width: 990px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (max-width: 722px) {
+  .project-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section#about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about .about-img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* Typography end */
+/* Sidebar */
+/* Hide sidebar by default */
+.sidebar {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 80vw;
+  max-width: 320px;
+  background-color: var(--primary-color);
+  padding: 32px 24px 24px 24px;
+  z-index: 1001;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+/* Show sidebar when active */
+.sidebar.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: black;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.sidebar-menu {
+  position: relative;
+  width: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 2rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: var(--primary-color);
+  z-index: 1002;
+}
 
 /* Basic Styles Start */
 button,
@@ -330,10 +440,11 @@ p.sub-title {
 /* About section start */
 section#about {
   display: flex;
-  justify-content: space-between;
-  
-  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;    /* Center horizontally */
+  justify-content: center;/* Center vertically */
   gap: 40px;
+  text-align: center;     /* Center text */
 }
 
 #about .details {
@@ -341,6 +452,14 @@ section#about {
   flex-direction: column;
   gap: 20px;
   max-width: 600px;
+  align-items: center;    /* Center details content */
+}
+
+#about .social-links,
+.wrapper {
+  display: flex;
+  justify-content: center; /* Center social buttons horizontally */
+  gap: 8px;
 }
 
 #about .details p {
@@ -356,11 +475,6 @@ section#about {
 
 }
 
-#about .social-links {
-  display: flex;
-  gap: 8px;
-}
-
 #about .social-links img {
   width: 36px;
 }
@@ -368,7 +482,6 @@ section#about {
   display: inline-block;
   height: 40px;
   width: 40px;
-  float: left;
   text-align: center;
   margin: 0 5px;
   overflow: hidden;
@@ -517,7 +630,7 @@ section#footer {
   }
 }
 
-/* Sidebar */
+/* Sidebar
 .sidebar {
   display: flex;
   position: fixed;
@@ -592,7 +705,7 @@ section#footer {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700pxrovide ) {
   .hamburger {
     display: block;
   }
@@ -607,4 +720,4 @@ section#footer {
 }
 .active {
   display: flex;
-}
+} */
